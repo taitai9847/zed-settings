@@ -9,13 +9,23 @@
 {
   "base_keymap": "VSCode",
   "theme": "Ayu Mirage",
-  "vim_mode": true,
+  "vim_mode": false,
+  "auto_update": true,
   "ui_font_size": 16,
   "buffer_font_size": 14,
   "autosave": "on_focus_change",
   "tabs": {
     "file_icons": true,
     "git_status": true
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
   },
   "file_types": {
     "Dockerfile": ["Dockerfile.*"]
@@ -56,6 +66,18 @@
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50
   },
+  "scrollbar": {
+    "show": "always",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true,
+    "axes": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
   "terminal": {
     "alternate_scroll": "off",
     "blinking": "terminal_controlled",
@@ -70,7 +92,7 @@
     "env": {},
     "line_height": "comfortable",
     "option_as_meta": true,
-    "button": false,
+    "button": true,
     "toolbar": {
       "title": true
     },
